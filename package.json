@@ -1,0 +1,19 @@
+{
+  "name": "marketapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliyhuc/marketapp.git"
+  },
+  "author": "Eli Chitrit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliyhuc/marketapp/issues"
+  },
+  "homepage": "https://github.com/eliyhuc/marketapp#readme"
+}
