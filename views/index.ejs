@@ -13,6 +13,7 @@
                 <h4>Upload files</h4>
                 <p>Here you can upload any file you like to the nodeJS server</p><br/>
                 <form method="POST" action="/uploadfile" enctype="multipart/form-data" id="upload_form">
+                    <input type="text" name="_csrf" value="<%= csrfToken %>" />
                     <input type="file" multiple name="image" class="form-control" />
                 </form>
                 <input style="margin-top: 10px;" type="submit" value="Upload File" class="btn btn-primary" form="upload_form" />
