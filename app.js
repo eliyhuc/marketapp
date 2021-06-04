@@ -48,6 +48,7 @@ app.use(session({
     store: store
 }))
 
+
 app.use((request, response, next) => {
     if(!request.session.account){
         return next();
@@ -70,6 +71,12 @@ app.use((request, response, next) => {
 
 const indexController = require('./controllers/index');
 app.use('/', indexController);
+
+const actionsController = require('./controllers/actions');
+app.use('/actions', actionsController);
+
+const dashboardController = require('./controllers/dashboard');
+app.use('/dashboard', dashboardController);
 
 const port = 6060;
 
